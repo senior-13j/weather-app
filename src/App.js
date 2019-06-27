@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
+import Title from './components/Title';
+import Slider from './components/Slider';
 
-function App() {
+const App = () => {
   return (
-    <div className="App"> <h1>GitHub test</h1></div>
+    <div className="App">
+      <Title/>
+      <Slider/>
+    </div>
   );
 }
 
