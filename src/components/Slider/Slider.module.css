@@ -1,0 +1,14 @@
+
+.Slider {
+    margin-top: 35px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.Slider .arrows {
+    width: 100px;
+}
+.Slider .arrows img{
+    display: block;
+    margin: auto;
+}

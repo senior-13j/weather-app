@@ -1,0 +1,16 @@
+.Title {
+    padding-top:70px;
+    text-align: center;
+}
+.Title h1{
+    display: inline;
+    margin-right: 10px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #555555;
+}
+.Title span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}

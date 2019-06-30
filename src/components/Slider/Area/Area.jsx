@@ -1,9 +1,10 @@
 import React from 'react';
-import './../App.css';
-import Item from './Item';
+import style from './Area.module.css';
+import Item from './Item/Item.jsx';
+
 const Area = () => {
   return (
-    <div className="Area">
+    <div className={style.Area}>
       <Item/>
       <Item/>
       <Item/>

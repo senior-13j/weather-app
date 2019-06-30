@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Title from './components/Title';
-import Slider from './components/Slider';
+import Title from './components/Title/Title.jsx';
+import Slider from './components/Slider/Slider.jsx';
 
 const App = () => {
   return (

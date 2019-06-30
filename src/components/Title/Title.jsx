@@ -1,9 +1,9 @@
 import React from 'react';
-import './../App.css';
+import style from './Title.module.css';
 
 const Title = () => {
   return (
-    <div className="Title">
+    <div className={style.Title}>
       <h1>Прогноз погоды</h1>
       <span>Самара, 2 июня, среда</span>
     </div>
