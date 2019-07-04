@@ -1,10 +1,10 @@
-import setDate from './setDate';
+import setDate from './setDate.js';
 
 const getWeekDay = (number) => {
   let date = setDate();
-  let days = ['Воскресенье', 'Понедельник',
-    'Вторник', 'Среда', 'Четверг',
-    'Пятница', 'Суббота'];
+  let days = ['воскресенье', 'понедельник',
+    'вторник', 'среда', 'четверг',
+    'пятница', 'суббота'];
   if (date.getDay() + number === days.length) {
     return days[0];
   }

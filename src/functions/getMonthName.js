@@ -1,4 +1,4 @@
-import setDate from './setDate';
+import setDate from './setDate.js';
 
 const getMonthName = () => {
   const date = setDate();

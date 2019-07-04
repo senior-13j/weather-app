@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Slider.module.css';
-import left_arrow from './left_arrow.png';
-import right_arrow from './right_arrow.png';
+import left_arrow from './../../images/left_arrow.png';
+import right_arrow from './../../images/right_arrow.png';
 import Area from './Area/Area.jsx';
 
 const Slider = () => {

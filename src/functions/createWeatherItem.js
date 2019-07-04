@@ -1,6 +1,6 @@
-import sun from './../components/Slider/Area/Item/sun.png';
-import rain from './../components/Slider/Area/Item/rain.png';
-import c from './../components/Slider/Area/Item/cloud.png';
+import sun from './../images/sun.png';
+import rain from './../images/rain.png';
+import cloud from './../images/cloud.png';
 import getMonthDay from './getMonthDay.js';
 import getMonthName from './getMonthName.js';
 import getWeekDay from './getWeekDay.js';
@@ -12,26 +12,26 @@ let createWeatherItem = (count) => {
   let num = randomInteger(0, 2);
   let dTemp = randomInteger(12, 36);
   let nTemp = randomInteger(-10, 8);
-  let cloud = array[num];
-  let first;
+  let chosen = array[num];
+  let localstatus;
   let icon;
   if (count === 0) {
-    first = 'Сегодня';
+    localstatus = 'Сегодня';
   } else {
-    first = getWeekDay(count);
+    localstatus = getWeekDay(count);
   }
   if (num === 0) {
     icon = sun;
   } else if (num === 1) {
     icon = rain;
   } else if (num === 2) {
-    icon = c;
+    icon = cloud;
   }
   return {
-    status: first,
+    status: localstatus,
     date: data,
     iconObj: icon,
-    cloudiness: cloud,
+    cloudiness: chosen,
     dayTemp: dTemp,
     nightTemp: nTemp
   };
