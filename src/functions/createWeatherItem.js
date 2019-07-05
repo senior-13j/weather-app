@@ -30,7 +30,6 @@ let createWeatherItem = (count) => {
     icon = cloud;
   }
   counter++;
-  console.log(counter);
   if (counter > 3) {
     hide = false;
   }
