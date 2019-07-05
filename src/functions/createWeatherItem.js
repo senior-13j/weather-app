@@ -10,8 +10,8 @@ let createWeatherItem = (count) => {
   let data = `${getMonthDay(count)} ${getMonthName()}`;
   let array = ['Ясно, без осадков', 'Облачно, дождь', 'Облачно, без осадков'];
   let num = randomInteger(0, 2);
-  let dTemp = randomInteger(12, 36);
-  let nTemp = randomInteger(-10, 8);
+  let dTemp = randomInteger(12, 28);
+  let nTemp = randomInteger(1, 8);
   let chosen = array[num];
   let localstatus;
   let icon;
