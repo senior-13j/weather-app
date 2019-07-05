@@ -6,7 +6,9 @@ import getMonthName from './getMonthName.js';
 import getWeekDay from './getWeekDay.js';
 import randomInteger from './randomInteger.js'
 
+var counter = -1;
 let createWeatherItem = (count) => {
+  var hide = true;
   let data = `${getMonthDay(count)} ${getMonthName()}`;
   let array = ['Ясно, без осадков', 'Облачно, дождь', 'Облачно, без осадков'];
   let num = randomInteger(0, 2);
@@ -27,13 +29,19 @@ let createWeatherItem = (count) => {
   } else if (num === 2) {
     icon = cloud;
   }
+  counter++;
+  console.log(counter);
+  if (counter > 3) {
+    hide = false;
+  }
   return {
     status: localstatus,
     date: data,
     iconObj: icon,
     cloudiness: chosen,
     dayTemp: dTemp,
-    nightTemp: nTemp
+    nightTemp: nTemp,
+    isShown: hide
   };
 }
 export default createWeatherItem;
