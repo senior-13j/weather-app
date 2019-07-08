@@ -8,13 +8,16 @@
 .Slider .arrows {
     width: 100px;
     margin-top: 120px;
+    cursor: pointer;
 }
 .Slider .outerArrows {
     height: 300px;
     width: 90px;
+    cursor: pointer;
 }
 .Slider .arrows img{
     display: block;
     margin: auto;
     height: 50px;
+    cursor: pointer;
 }

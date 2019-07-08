@@ -8,7 +8,7 @@ import Area from './Area/Area.jsx';
 import convert from './../../functions/convert.js';
 import toJSXobj from './../../functions/toJSXobj.js';
 
-let srcArray = convert(15);
+let srcArray = convert(11);
 let newArray = [];
 for (let i = 0; i < srcArray.length; i++) {
   if (srcArray[i].isShown === true) {
