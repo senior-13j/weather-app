@@ -7,8 +7,14 @@
 }
 .Slider .arrows {
     width: 100px;
+    margin-top: 120px;
+}
+.Slider .outerArrows {
+    height: 300px;
+    width: 90px;
 }
 .Slider .arrows img{
     display: block;
     margin: auto;
+    height: 50px;
 }

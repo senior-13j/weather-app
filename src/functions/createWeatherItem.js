@@ -34,13 +34,13 @@ let createWeatherItem = (count) => {
     hide = false;
   }
   return {
+    isShown: hide,
     status: localstatus,
     date: data,
     iconObj: icon,
     cloudiness: chosen,
     dayTemp: dTemp,
-    nightTemp: nTemp,
-    isShown: hide
+    nightTemp: nTemp
   };
 }
 export default createWeatherItem;

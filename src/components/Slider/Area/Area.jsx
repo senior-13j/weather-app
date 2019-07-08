@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './Area.module.css';
 
+
 const Area = (props) => {
-  return (
-    <div className={style.Area}>
+    return (
+      <div className={style.Area} >
       {props.array}
-    </div>
-  );
-}
+      </div>);
+    }
+
 export default Area;
