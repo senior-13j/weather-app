@@ -1,10 +1,10 @@
 import sun from './../images/sun.png';
 import rain from './../images/rain.png';
 import cloud from './../images/cloud.png';
-import getMonthDay from './getMonthDay.js';
-import getMonthName from './getMonthName.js';
-import getWeekDay from './getWeekDay.js';
 import randomInteger from './randomInteger.js'
+import {getMonthDay} from './dates.js';
+import {getMonthName} from './dates.js';
+import {getWeekDay} from './dates.js';
 
 var counter = -1;
 let createWeatherItem = (count) => {

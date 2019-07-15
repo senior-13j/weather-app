@@ -1,9 +1,8 @@
 import React from 'react';
 import style from './Title.module.css';
-import getMonthDay from './../../functions/getMonthDay.js';
-import getMonthName from './../../functions/getMonthName.js';
-import getWeekDay from './../../functions/getWeekDay.js';
-
+import {getMonthDay} from './../../functions/dates.js';
+import {getMonthName} from './../../functions/dates.js';
+import {getWeekDay} from './../../functions/dates.js';
 const Title = () => {
   return (
     <div className={style.Title}>
