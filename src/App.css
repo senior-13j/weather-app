@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 body {
+    min-width: 720px;
     font-family: 'Roboto', sans-serif;
 }
 .App {
@@ -19,22 +20,37 @@ body {
 width: 868px;}
  }
  @media screen and (max-width: 870px) {
-    .App { max-width: 870px;
-        min-width: 870px;
-    width: 870px;}
+    .App { max-width: 745px;
+        min-width: 740px;
+    width: 740px;}
+     }
+     @media screen and (max-width: 868px) {
+        .App { max-width: 745px;
+            min-width: 740px;
+        width: 740px;}
      }
      @media screen and (max-width: 850px) {
-        .App { max-width: 850px;
-            min-width: 820px;
-        width: 830px;}
-         }
+        .App { max-width: 745px;
+            min-width: 740px;
+        width: 740px;}
+     }
          @media screen and (max-width: 790px) {
             .App { max-width: 790px;
                 min-width: 750px;
             width: 760px;}
              }
+             @media screen and (max-width: 770px) {
+                .App { max-width: 745px;
+                    min-width: 740px;
+                width: 740px;}
+             }
      @media screen and (max-width: 750px) {
         .App { max-width: 745px;
-            min-width: 740px;
-        width: 740px;}
-         }
+            min-width: 720px;
+        width: 730px;}
+     }
+     @media screen and (max-width: 730px) {
+        .App { max-width: 725px;
+            min-width: 720px;
+        width: 720px;}
+     }
