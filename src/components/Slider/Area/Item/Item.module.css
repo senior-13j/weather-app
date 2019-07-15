@@ -38,3 +38,16 @@
     font-weight: 400;
     margin-top: 35px;
  }
+
+ @media screen and (max-width: 1000px) {
+   .Item {
+    width: 180px;
+    height: 290px;
+   }
+ }
+ @media screen and (max-width: 870px) {
+    .Item {
+        width: 150px;
+        height: 280px;
+       }
+    }

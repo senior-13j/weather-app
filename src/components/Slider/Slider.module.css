@@ -21,3 +21,27 @@
     height: 50px;
     cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+    .Slider .outerArrows {
+        width: 50px;
+    }
+    .Slider .arrows {
+        max-width: 100%;
+    }
+    .Slider .arrows img{
+        max-width: 100%;
+        margin: 0;
+    }
+    .Slider .outerArrows:last-child .arrows img{
+        max-width: 100%;
+        margin: 0;
+        margin-left: 50px;
+    }
+ }
+ @media screen and (max-width: 750px) {
+    .Slider .outerArrows:last-child .arrows img{
+        max-width: 100%;
+        margin: 0;
+        margin-left: 20px;
+    }
+     }

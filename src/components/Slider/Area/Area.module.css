@@ -5,3 +5,8 @@
     width: 806px;
     display: flex;
 }
+@media screen and (max-width: 1000px) {
+    .Area {
+       width: auto;
+    }
+}

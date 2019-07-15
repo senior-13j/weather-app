@@ -13,3 +13,28 @@ body {
     margin: 0 auto;
     background-color: #F4F4F4;
 }
+@media screen and (max-width: 1000px) {
+ .App { max-width: 916px;
+    min-width: 868px;
+width: 868px;}
+ }
+ @media screen and (max-width: 870px) {
+    .App { max-width: 870px;
+        min-width: 870px;
+    width: 870px;}
+     }
+     @media screen and (max-width: 850px) {
+        .App { max-width: 850px;
+            min-width: 820px;
+        width: 830px;}
+         }
+         @media screen and (max-width: 790px) {
+            .App { max-width: 790px;
+                min-width: 750px;
+            width: 760px;}
+             }
+     @media screen and (max-width: 750px) {
+        .App { max-width: 745px;
+            min-width: 740px;
+        width: 740px;}
+         }
