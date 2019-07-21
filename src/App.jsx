@@ -9,6 +9,9 @@ const App = () => {
     <div className="App">
       <Title />
       <Slider />
+      <div className="footer">
+        <p>Аркадий Котляров <sup>&copy;</sup> 2019</p>
+      </div>
     </div>
   );
 }
