@@ -3,13 +3,12 @@ import rain from './../images/rain.png';
 import cloud from './../images/cloud.png';
 import randomInteger from './randomInteger.js'
 import {getMonthDay} from './dates.js';
-import {getMonthName} from './dates.js';
 import {getWeekDay} from './dates.js';
 
 var counter = -1;
 let createWeatherItem = (count) => {
   var hide = true;
-  let data = `${getMonthDay(count)} ${getMonthName()}`;
+  let data = `${getMonthDay(count)}`;
   let array = ['Ясно, без осадков', 'Облачно, дождь', 'Облачно, без осадков'];
   let num = randomInteger(0, 2);
   let dTemp = randomInteger(12, 28);

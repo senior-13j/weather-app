@@ -1,24 +1,19 @@
 
-const setDate = () => {
+const returnDate = () => {
     return new Date();
 }
 
 const getMonthDay = (number) => {
-    const date = setDate();
-    return (date.getDate() + number);
-  }
-
-  const getMonthName = () => {
-    const date = setDate();
+    const date = returnDate();
+    date.setDate(date.getDate() + number);
     let months = ['января', 'февраля', 'марта', 'апреля',
       'мая', 'июня', 'июля', 'августа',
       'сентября', 'октября', 'ноября', 'декабря'];
-    return months[date.getMonth()];
+    return `${date.getDate()} ${months[date.getMonth()]}`;
   }
-
   
 const getWeekDay = (number) => {
-    let date = setDate();
+    let date = returnDate();
     let days = ['воскресенье', 'понедельник',
       'вторник', 'среда', 'четверг',
       'пятница', 'суббота'];
@@ -33,5 +28,4 @@ const getWeekDay = (number) => {
   }
   
 export {getMonthDay};
-export {getMonthName};
 export {getWeekDay};
