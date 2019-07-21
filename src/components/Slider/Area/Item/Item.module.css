@@ -3,6 +3,42 @@
     width: 200px;
     height: 300px;
     margin-right: 2px;
+    position: relative;
+}
+.Item .descr {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px;
+    font-size: 17px;
+    border-radius: 3px;
+    transform: scale(0) rotate(270deg);
+    background: rgba(80, 159, 179, 0.884);
+    transition: all .9s;
+}
+.Item .descr span {
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.918);
+    text-align: center;
+}
+.Item .descr span img{
+    width: 15%;
+    margin-left: 1%;
+}
+.Item .descr span .text{
+    display: inline-block;
+    margin-left: 30%;
+}
+.Item:hover .descr {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
 }
 .Item:last-child{
     margin-right: 0;
@@ -38,7 +74,6 @@
     font-weight: 400;
     margin-top: 35px;
  }
-
  @media screen and (max-width: 1000px) {
    .Item {
     width: 180px;

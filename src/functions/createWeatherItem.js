@@ -32,6 +32,58 @@ let createWeatherItem = (count) => {
   if (counter > 3) {
     hide = false;
   }
+  let curDay6 = randomInteger(0, 6);
+  let curDay10 = randomInteger(8, 15);
+  let curDay14 = randomInteger(20, 27);
+  let curDay18 = randomInteger(10, 15);
+  let curDay22 = randomInteger(2, 6);
+  let n;
+  let img6;
+  let img10;
+  let img14;
+  let img18;
+  let img22;
+    n = randomInteger(0, 2);
+    if (n === 0) {
+      img6 = sun;
+    } else if (n === 1) {
+      img6 = rain;
+    } else if (n === 2) {
+      img6 = cloud;
+    }
+    n = randomInteger(0, 2);
+    if (n === 0) {
+      img10 = sun;
+    } else if (n === 1) {
+      img10 = rain;
+    } else if (n === 2) {
+      img10 = cloud;
+    }
+    n = randomInteger(0, 2);
+    if (n === 0) {
+      img14 = sun;
+    } else if (n === 1) {
+      img14 = rain;
+    } else if (n === 2) {
+      img14 = cloud;
+    }
+    n = randomInteger(0, 2);
+    if (n === 0) {
+      img18 = sun;
+    } else if (n === 1) {
+      img18 = rain;
+    } else if (n === 2) {
+      img18 = cloud;
+    }
+    n = randomInteger(0, 2);
+    if (n === 0) {
+      img22 = sun;
+    } else if (n === 1) {
+      img22 = rain;
+    } else if (n === 2) {
+      img22 = cloud;
+    }
+  
   return {
     isShown: hide,
     status: localstatus,
@@ -39,7 +91,19 @@ let createWeatherItem = (count) => {
     iconObj: icon,
     cloudiness: chosen,
     dayTemp: dTemp,
-    nightTemp: nTemp
+    nightTemp: nTemp,
+    currentDay: {
+      curDay6,
+      curDay10,
+      curDay14,
+      curDay18,
+      curDay22,
+      img6,
+      img10,
+      img14,
+      img18,
+      img22
+    }
   };
 }
 export default createWeatherItem;
