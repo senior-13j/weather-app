@@ -17,9 +17,9 @@
     padding: 2px 5px;
     font-size: 16px;
     border-radius: 3px;
-    transform: scale(0) rotate(270deg);
-    background: rgba(78, 182, 67, 0.884);
-    transition: all .9s;
+    transform: scale(-0.9 , 0.1) rotate(240deg);
+    background: rgba(186, 0, 211, 0.952);
+    transition: all ease-in 1s;
 }
 .Item .descr span {
     font-weight: 300;
@@ -38,7 +38,8 @@
 }
 .Item:hover .descr {
     opacity: 1;
-    transform: scale(1) rotate(0deg);
+    transform: scale(1,1) rotate(0deg);
+    background: rgba(96, 177, 252, 0.973);
 }
 .Item:last-child{
     margin-right: 0;

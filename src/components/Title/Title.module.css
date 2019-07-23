@@ -1,6 +1,7 @@
 .Title {
     padding-top:70px;
     text-align: center;
+    cursor: pointer;
 }
 .Title h1{
     display: inline;

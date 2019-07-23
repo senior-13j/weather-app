@@ -4,6 +4,7 @@
     height: 300px;
     width: 806px;
     display: flex;
+    cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
     .Area {
