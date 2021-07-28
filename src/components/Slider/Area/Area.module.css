@@ -1,0 +1,13 @@
+
+.Area {
+    background-color: #F4F4F4;
+    height: 300px;
+    width: 806px;
+    display: flex;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .Area {
+       width: auto;
+    }
+}
