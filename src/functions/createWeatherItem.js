@@ -1,15 +1,19 @@
-import sun from './../images/sun.png';
-import rain from './../images/rain.png';
-import cloud from './../images/cloud.png';
-import randomInteger from './randomInteger.js'
-import {getMonthDay} from './dates.js';
-import {getWeekDay} from './dates.js';
+import sun from "./../images/sun.png";
+import rain from "./../images/rain.png";
+import cloud from "./../images/cloud.png";
+import { randomInteger } from "./randomInteger.js";
+import { getMonthDay } from "./dates.js";
+import { getWeekDay } from "./dates.js";
 
-var counter = -1;
-let createWeatherItem = (count) => {
-  var hide = true;
+let counter = -1;
+export const createWeatherItem = (count) => {
+  let hide = true;
   let data = `${getMonthDay(count)}`;
-  let array = ['Ясно, без осадков', 'Облачно, дождь', 'Облачно, без осадков'];
+  let array = [
+    "Сlear, no precipitation",
+    "Cloudy, raining",
+    "Cloudy, no precipitation",
+  ];
   let num = randomInteger(0, 2);
   let dTemp = randomInteger(12, 28);
   let nTemp = randomInteger(1, 8);
@@ -17,7 +21,7 @@ let createWeatherItem = (count) => {
   let localstatus;
   let icon;
   if (count === 0) {
-    localstatus = 'Сегодня';
+    localstatus = "Today";
   } else {
     localstatus = getWeekDay(count);
   }
@@ -43,47 +47,47 @@ let createWeatherItem = (count) => {
   let img14;
   let img18;
   let img22;
-    n = randomInteger(0, 2);
-    if (n === 0) {
-      img6 = sun;
-    } else if (n === 1) {
-      img6 = rain;
-    } else if (n === 2) {
-      img6 = cloud;
-    }
-    n = randomInteger(0, 2);
-    if (n === 0) {
-      img10 = sun;
-    } else if (n === 1) {
-      img10 = rain;
-    } else if (n === 2) {
-      img10 = cloud;
-    }
-    n = randomInteger(0, 2);
-    if (n === 0) {
-      img14 = sun;
-    } else if (n === 1) {
-      img14 = rain;
-    } else if (n === 2) {
-      img14 = cloud;
-    }
-    n = randomInteger(0, 2);
-    if (n === 0) {
-      img18 = sun;
-    } else if (n === 1) {
-      img18 = rain;
-    } else if (n === 2) {
-      img18 = cloud;
-    }
-    n = randomInteger(0, 2);
-    if (n === 0) {
-      img22 = sun;
-    } else if (n === 1) {
-      img22 = rain;
-    } else if (n === 2) {
-      img22 = cloud;
-    }
-  
+  n = randomInteger(0, 2);
+  if (n === 0) {
+    img6 = sun;
+  } else if (n === 1) {
+    img6 = rain;
+  } else if (n === 2) {
+    img6 = cloud;
+  }
+  n = randomInteger(0, 2);
+  if (n === 0) {
+    img10 = sun;
+  } else if (n === 1) {
+    img10 = rain;
+  } else if (n === 2) {
+    img10 = cloud;
+  }
+  n = randomInteger(0, 2);
+  if (n === 0) {
+    img14 = sun;
+  } else if (n === 1) {
+    img14 = rain;
+  } else if (n === 2) {
+    img14 = cloud;
+  }
+  n = randomInteger(0, 2);
+  if (n === 0) {
+    img18 = sun;
+  } else if (n === 1) {
+    img18 = rain;
+  } else if (n === 2) {
+    img18 = cloud;
+  }
+  n = randomInteger(0, 2);
+  if (n === 0) {
+    img22 = sun;
+  } else if (n === 1) {
+    img22 = rain;
+  } else if (n === 2) {
+    img22 = cloud;
+  }
+
   return {
     isShown: hide,
     status: localstatus,
@@ -102,8 +106,7 @@ let createWeatherItem = (count) => {
       img10,
       img14,
       img18,
-      img22
-    }
+      img22,
+    },
   };
-}
-export default createWeatherItem;
+};

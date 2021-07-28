@@ -1,47 +1,46 @@
-
 .Slider {
-    margin-top: 35px;
-    height: 300px;
-    display: flex;
-    align-items: center;
+  margin-top: 35px;
+  height: 300px;
+  display: flex;
+  align-items: center;
 }
 .Slider .arrows {
-    width: 100px;
-    margin-top: 120px;
-    cursor: pointer;
+  width: 100px;
+  margin-top: 120px;
+  cursor: pointer;
 }
 .Slider .outerArrows {
-    height: 300px;
-    width: 90px;
-    cursor: pointer;
+  height: 300px;
+  width: 90px;
+  cursor: pointer;
 }
-.Slider .arrows img{
-    display: block;
-    margin: auto;
-    height: 50px;
-    cursor: pointer;
+.Slider .arrows img {
+  display: block;
+  margin: auto;
+  height: 50px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
-    .Slider .outerArrows {
-        width: 50px;
-    }
-    .Slider .arrows {
-        max-width: 100%;
-    }
-    .Slider .arrows img{
-        max-width: 100%;
-        margin: 0;
-    }
-    .Slider .outerArrows:last-child .arrows img{
-        max-width: 100%;
-        margin: 0;
-        margin-left: 50px;
-    }
- }
- @media screen and (max-width: 750px) {
-    .Slider .outerArrows:last-child .arrows img{
-        max-width: 100%;
-        margin: 0;
-        margin-left: 20px;
-    }
-     }
+  .Slider .outerArrows {
+    width: 50px;
+  }
+  .Slider .arrows {
+    max-width: 100%;
+  }
+  .Slider .arrows img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .Slider .outerArrows:last-child .arrows img {
+    max-width: 100%;
+    margin: 0;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Slider .outerArrows:last-child .arrows img {
+    max-width: 100%;
+    margin: 0;
+    margin-left: 20px;
+  }
+}

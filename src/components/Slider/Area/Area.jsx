@@ -1,12 +1,4 @@
-import React from 'react';
-import style from './Area.module.css';
+import React from "react";
+import styles from "./Area.module.css";
 
-
-const Area = (props) => {
-    return (
-      <div className={style.Area} >
-      {props.array}
-      </div>);
-    }
-
-export default Area;
+export const Area = (props) => <div className={styles.Area}>{props.array}</div>;
